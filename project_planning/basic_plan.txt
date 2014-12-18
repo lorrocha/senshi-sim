@@ -49,6 +49,53 @@ So to calculate this, you add Usagi's FRIENDLINESS to a randomly generated numbe
 
 FRIENDLINESS + rand(11) >= 27
 
+- ACTIVITIES - 
+
+The main modifier for stats will be activities. One of these are chosen every turn, to directly modify statistics.
+
+DO HOMERWORK - 
+	+1 KNOWLEDGE
+	+1 FOCUS
+	-1 ATHLETICISM
+
+GO TO THE SHRINE - 
+	+1 FOCUS
+	+1 FRIENDLINESS
+	+1 composure
+	-1 fun
+
+NAP -
+	+1 FUN
+	-1 INITIATIVE
+
+GO TO THE ARCADE -
+	+1 FUN
+	+1 FRIENDLINESS
+	-1 INITIATIVE
+
+HELP OTHERS -
+	+1 COMPASSION
+	+1 CHARISMA
+
+PATROL - 
+	+1 INITIATIVE
+	+1 FOCUS
+	-1 COMPASSION
+
+TRAIN -
+	+1 ATHLETICISM
+	+1 FIGHT
+	-1 FRIENDLINESS
+
+PRACTICE SPEAKING -
+	+1 COMPOSURE
+	+1 CHARISMA
+
+HANG OUT WITH FRIENDS -
+	+1 FUN
+	+1 FRIENDLINESS
+	-1 FOCUS
+
 
 
 
