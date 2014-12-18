@@ -9,6 +9,10 @@ class Gameplay
 		rand(11)
 	end
 
+	def all_stats
+		@usa.all_stats
+	end
+
 	def stat_check(stat, goal)
 		@usa.send(stat.to_sym) + randomizer >= goal
 	end
