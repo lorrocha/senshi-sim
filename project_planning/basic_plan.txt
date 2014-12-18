@@ -36,6 +36,18 @@ Isolated - FRIENDLINESS
 Clumsy - ATHLETICISM
 Frail - FIGHT
 lack of focus - FOCUS
+ignorance - KNOWLEDGE
+laziness - INITIATIVE
+seriousness - FUN
+
+Checks will be made thusly, to add an element of randomness/surprise:
+
+EX. 
+AMI is a really shy girl. The threshold for successfully approaching AMI is 27 FRIENDLINESS. Usagi has FRIENDLINESS of 25.
+
+So to calculate this, you add Usagi's FRIENDLINESS to a randomly generated number between 1 - 10. If the resulting number is 27 or greater, then Usagi passes the check.
+
+FRIENDLINESS + rand(11) >= 27
 
 
 
