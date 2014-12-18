@@ -3,6 +3,7 @@ class Gameplay
 
 	def initialize(player)
 		@usa = player
+		@place = Locations.new
 	end
 
 	def randomizer
@@ -17,13 +18,8 @@ class Gameplay
 		@usa.send(stat.to_sym) + randomizer >= goal
 	end
 
-	def improve_stat(stat, num)
+	def update_stat(stat, num)
 		val = @usa.send("#{stat}") + num
-		@usa.send("#{stat}=", val)
-	end
-
-	def lower_stat(stat,num)
-		val = @usa.send("#{stat}") - num
 		@usa.send("#{stat}=", val)
 	end
 end
