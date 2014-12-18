@@ -1,9 +1,10 @@
 require 'pry'
 require_relative 'usagi'
+require_relative 'gameplay'
 
 class GameRunner
 	def initialize
-		@player = Usagi.new
+		@game = Gameplay.new(Usagi.new)
 	end
 
 	def start
