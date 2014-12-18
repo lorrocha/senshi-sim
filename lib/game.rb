@@ -1,7 +1,7 @@
 require 'pry'
 require_relative 'usagi'
 require_relative 'gameplay'
-require_relative 'level1'
+require_relative 'locations'
 
 class GameRunner
 	def initialize

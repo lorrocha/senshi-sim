@@ -15,8 +15,8 @@ class Usagi
 	end
 
 	def all_stats
-		{'composure':composure, 'charisma':charisma, 'compassion':compassion,
-		 'friendliness':friendliness,'athleticism':athleticism, 'fight':fight,
-		  'focus':focus, 'knowledge':knowledge, 'initiative':initiative,'fun':fun}
+		{'composure'=> composure, 'charisma'=> charisma, 'compassion'=> compassion,
+		 'friendliness'=> friendliness,'athleticism'=> athleticism, 'fight'=> fight,
+		  'focus'=> focus, 'knowledge'=> knowledge, 'initiative'=> initiative,'fun'=> fun}
 	end
 end

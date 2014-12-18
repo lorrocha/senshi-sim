@@ -22,4 +22,10 @@ class Gameplay
 		val = @usa.send("#{stat}") + num
 		@usa.send("#{stat}=", val)
 	end
+
+	def goto(place)
+		@place.send(place.to_sym).each do |key, val|
+			update_stat(key, val)
+		end
+	end
 end
