@@ -10,7 +10,7 @@ class Gameplay
 	end
 
 	def stat_check(stat, goal)
-		@usa.send(stat.to_sym)# + randomizer >= goal
+		@usa.send(stat.to_sym) + randomizer >= goal
 	end
 
 	# def improve_stat(stat, num)
