@@ -1,0 +1,43 @@
+So this is the idea.
+
+Sailor Senshi. Friendship. How can this possibly go wrong?
+
+This is a game modelled after Long Live The Queen, cross-over with a romance simulator - except you're not really doing much romance. It's all about balancing your interpersonal relationships with the other senshi, aka all about FRIENDSHIP YAY.
+
+You play as Usagi, when she's still just Usagi. Slowly, one by one, she gains new comrades.
+
+The main dynamic of this game is the teamwork/synchronicity between the senshi. Usagi needs to balance a bunch of different personalities (the senshi) to keep the team balance high enough to beat the monster of the day.
+
+
+- CORE MECHANICS - 
+There are three main phases to the game.
+
+FIRST PHASE:
+She chooses what activity to do after school every day. Activities boost her stats - or hurt them. Some activities are only available after you get your stats to a certain point.
+
+BONUS: Activities also give grant Usagi a mood modifier. Depending on her mood, activities wind up being more/less effective. (ei, if Usagi studies too much, she gets 'Sad'. Sad effects the effectiveness of Studying. To clear Sad, she needs to do something she likes, like 'Nap', or 'Go to Crown').
+
+SECOND PHASE:
+The 'story' will play out after the Usagi selects her activities, her new stats in consideration. Based on her stats, the individual senshi's estimation of Usagi will either grow, diminish, or stay the same. Once you add all the senshi's estimations, you get the total 'teamwork' score, and the 'teamwork' score will determine how the third phase will go.
+
+Occassionally, there will be player choices that will also effect the senshi's estimation/the player's stats.
+
+THIRD PHASE:
+Monster of the week battle! Depending on the 'teamwork' score, the senshi will either win or lose battles! Outcomes of this phase include: a massive win where the player gets a bonus. a win, continue on to the next day. a loss, continue on to the next day with a slight disadvantage. A massive loss, the game ends.
+
+- STATS - 
+
+Usagi's stats basically represent binaries and will be (for now, may grow in complexity):
+
+Anxious - COMPOSURE
+Rude - CHARISMA
+Pragmatic - COMPASSION
+Isolated - FRIENDLINESS
+Clumsy - ATHLETICISM
+Frail - FIGHT
+lack of focus - FOCUS
+
+
+
+
+
