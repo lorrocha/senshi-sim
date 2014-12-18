@@ -3,21 +3,29 @@ class Gameplay
 
 	def initialize(player)
 		@usa = player
+		@place = Locations.new
 	end
 
 	def randomizer
 		rand(11)
 	end
 
+	def all_stats
+		@usa.all_stats
+	end
+
 	def stat_check(stat, goal)
 		@usa.send(stat.to_sym) + randomizer >= goal
 	end
 
-	# def improve_stat(stat, num)
-	# 	@usa.send(stat.to_sym) = @usa.send(stat.to_sym) + num
-	# end
+	def update_stat(stat, num)
+		val = @usa.send("#{stat}") + num
+		@usa.send("#{stat}=", val)
+	end
 
-	def lower_stat(stat, num)
-		@usa.send(stat.to_sym) = @usa.send(stat.to_sym) - num
+	def goto(place)
+		@place.send(place.to_sym).each do |key, val|
+			update_stat(key, val)
+		end
 	end
 end
