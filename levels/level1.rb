@@ -34,7 +34,6 @@ class Level1
 			puts "[W]ait and see what happens"
 		end
 	
-		binding.pry
 		if input == 'l'
 			@game.update_stat('initiative',2)
 			goes_to_window
@@ -48,7 +47,7 @@ class Level1
 	def goes_to_window
 		puts "You steel yourself, clenching your jaw stubbornly, and march over to the window."
 		puts "You throw the curtains back to reveal..."
-		sleep 2
+		sleep 1
 		puts "A cat!"
 	end
 
