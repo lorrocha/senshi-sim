@@ -1,27 +1,4 @@
-class Level1
-	def initialize(usagi, senshi_hash)
-		# The beginning and the end of every level
-		# Starts with passing on the usagi / senshi array
-		@usa = usagi
-		@senshi = senshi_hash
-
-		@game = Gameplay.new(@usa)
-	end
-
-	def get_input
-		gets.chomp.downcase
-	end
-
-	def valid_input(array_of_acceptable_values, &block)
-		block.call
-		input = get_input
-	  if array_of_acceptable_values.include?(input)
-	  	return input
-	  else
-	 	  valid_input(array_of_acceptable_values) { block.call }
-	 	end
-	end
-
+class Level1 < Level
 	def opening_exposition
 		puts "Blah blah blah exposition here"
 	end
@@ -49,10 +26,6 @@ class Level1
 		puts "You throw the curtains back to reveal..."
 		sleep 1
 		puts "A cat!"
-	end
-
-	def finish_level
-		[@usa, @senshi]
 	end
 
 	def run
