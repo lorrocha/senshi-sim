@@ -16,17 +16,30 @@ class Level1 < Level
 			goes_to_window
 		elsif input == 'h'
 			@game.update_stat('composure',-1)
+			hides_under_covers
 		else
 			@game.update_stat('focus',1)
+			waits_for_more
 		end
 	end
 
 	def goes_to_window
 		puts "You steel yourself, clenching your jaw stubbornly, and march over to the window."
 		puts "You throw the curtains back to reveal..."
-		sleep 1
+		sleep 0.6
 		puts "A cat!"
 	end
+
+	def hides_under_covers
+		puts "Nuh, uh! You throw yourself under the covers stubbornly, closing your eyes with great determination."
+		puts "It was only a dream. Yes, you must have been dreaming...but still, you can't resist the urge to crack open one eye and peer to the window."
+		puts "Is that the outline of a cat?"
+	end	
+
+	def waits_for_more
+		puts "Your brows furrow as you sit, willing your ears to pick up on every sound possible. You notice the scuffling pick up again, and soon afterwards make out the form of a cat."
+	end
+
 
 	def run
 		opening_exposition
