@@ -40,10 +40,15 @@ class Level1 < Level
 		puts "Your brows furrow as you sit, willing your ears to pick up on every sound possible. You notice the scuffling pick up again, and soon afterwards make out the form of a cat."
 	end
 
+	def second_exposition
+		puts "Luna: Usagi. Blah blah blah"
+	end
+
 
 	def run
 		opening_exposition
 		first_action
+		second_exposition
 		finish_level
 	end
 end
