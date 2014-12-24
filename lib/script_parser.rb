@@ -16,15 +16,17 @@ class ScriptParser
 		start_array = false
 
 		@file.each_line do |line|
+			line = line.chomp
 			temp_array << line if start_array && line != "\n"
 			if line.start_with?('Scene')
 				start_array = true
 			elsif line == "\n" || line == 'END'
-				total_script << temp_array
+				total_script << temp_array unless temp_array.empty?
 				temp_array = []
 				start_array = false
 			end
 		end
+		total_script << temp_array unless temp_array.empty?
 		binding.pry
 	end
 
