@@ -24,6 +24,8 @@ class ScriptParser
 				total_script << temp_array unless temp_array.empty?
 				temp_array = []
 				start_array = false
+			elsif line.start_with?('**')
+				total_script << line
 			end
 		end
 		total_script << temp_array unless temp_array.empty?
