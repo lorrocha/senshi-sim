@@ -7,7 +7,9 @@
 class ScriptParser
 	def initialize(file)
 		@file = File.new(file)
-		parse
+		@lines = []
+		@actions = []
+		separate_actions_from_lines
 	end
 
 	def parse
@@ -29,7 +31,26 @@ class ScriptParser
 			end
 		end
 		total_script << temp_array unless temp_array.empty?
+	end
+
+	def separate_actions_from_lines
+		parse.each do |object|
+			if object.kind_of?(Array)
+				@lines << object
+			else
+				@actions << object
+			end
+		end
 		binding.pry
+	end
+
+	def parse_line(array)
+		final_array = []
+		array.each do |line|
+			split_line = line.split(': ')
+			final_array << {split_line[0] => split_line[1]}
+		end
+		final_array
 	end
 
 end
