@@ -6,7 +6,7 @@
 
 class ScriptParser
 	def initialize(file)
-		@file = file
+		@file = File.new(file)
 	end
 
 end
