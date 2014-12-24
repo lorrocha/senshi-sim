@@ -44,4 +44,13 @@ class ScriptParser
 		binding.pry
 	end
 
+	def parse_line(array)
+		final_array = []
+		array.each do |line|
+			split_line = line.split(': ')
+			final_array << {split_line[0] => split_line[1]}
+		end
+		final_array
+	end
+
 end
