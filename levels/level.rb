@@ -26,4 +26,8 @@ class Level
 	def finish_level
 		[@usa, @senshi]
 	end
+
+	def puts_lines(array)
+		binding.pry
+	end
 end

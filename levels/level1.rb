@@ -1,5 +1,6 @@
 class Level1 < Level
-	def initialize
+	def initialize(usagi, senshi_hash)
+		super
 		@script = ScriptParser.new('test.txt')
 	end
 
