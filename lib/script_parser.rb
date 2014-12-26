@@ -4,6 +4,8 @@
 # ** stat_check('composure',20)
 # Narrative: You throw your pen into the air and become a magical girl!
 
+attr_accessor :lines, :actions
+
 class ScriptParser
 	def initialize(file)
 		@file = File.new(file)

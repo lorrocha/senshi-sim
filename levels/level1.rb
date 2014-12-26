@@ -1,6 +1,10 @@
 class Level1 < Level
+	def initialize
+		@script = ScriptParser.new('test.txt')
+	end
+
 	def opening_exposition
-		puts "Blah blah blah exposition here"
+		binding.pry
 	end
 
 	def first_action
