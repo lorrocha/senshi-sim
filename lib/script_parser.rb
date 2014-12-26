@@ -2,9 +2,10 @@
 
 # Luna: Usagi! You must transform
 # ** stat_check('composure',20)
-# Narrative: You throw your pen into the air and become a magical girl!
-
+# Narrative: You throw your pen into the air and become a magical girl
 class ScriptParser
+	attr_accessor :lines, :actions
+
 	def initialize(file)
 		@file = File.new(file)
 		@lines = []
@@ -41,7 +42,6 @@ class ScriptParser
 				@actions << object
 			end
 		end
-		binding.pry
 	end
 
 	def parse_line(array)
