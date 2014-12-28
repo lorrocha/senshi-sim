@@ -11,8 +11,7 @@ class ScriptParser
 		@lines = []
 		@actions = []
 		separate_actions_from_lines
-		parse_individual_lines(@lines)
-		binding.pry
+		@lines = parse_individual_lines(@lines)
 	end
 
 	def parse
