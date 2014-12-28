@@ -53,7 +53,6 @@ class Level1 < Level
 	def run
 		opening_exposition
 		first_action
-		second_exposition
-		finish_level
+		return finish_level
 	end
 end

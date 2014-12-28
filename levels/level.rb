@@ -28,6 +28,8 @@ class Level
 	end
 
 	def puts_lines(array)
-		binding.pry
+		array.each do |hash|
+			puts "#{hash.keys.first}: #{hash.values.first}"
+		end
 	end
 end
