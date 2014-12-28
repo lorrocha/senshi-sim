@@ -52,12 +52,10 @@ class ScriptParser
 	end
 
 	def parse_line(array)
-		final_array = []
-		array.each do |line|
+		array.map do |line|
 			split_line = line.split(': ')
-			final_array << {split_line[0] => split_line[1]}
+			{split_line[0] => split_line[1]}
 		end
-		final_array
 	end
 
 end
