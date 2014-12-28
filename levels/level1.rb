@@ -5,7 +5,7 @@ class Level1 < Level
 	end
 
 	def opening_exposition
-		binding.pry
+		puts_lines(@script.lines.first)
 	end
 
 	def first_action

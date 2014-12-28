@@ -11,6 +11,7 @@ class ScriptParser
 		@lines = []
 		@actions = []
 		separate_actions_from_lines
+		@lines = parse_individual_lines(@lines)
 	end
 
 	def parse
@@ -44,13 +45,17 @@ class ScriptParser
 		end
 	end
 
-	def parse_line(array)
-		final_array = []
-		array.each do |line|
-			split_line = line.split(': ')
-			final_array << {split_line[0] => split_line[1]}
+	def parse_individual_lines(array)
+		array.map do |block|
+			parse_line(block)
 		end
-		final_array
+	end
+
+	def parse_line(array)
+		array.map do |line|
+			split_line = line.split(': ')
+			{split_line[0] => split_line[1]}
+		end
 	end
 
 end
