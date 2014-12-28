@@ -11,6 +11,8 @@ class ScriptParser
 		@lines = []
 		@actions = []
 		separate_actions_from_lines
+		parse_individual_lines(@lines)
+		binding.pry
 	end
 
 	def parse
@@ -41,6 +43,12 @@ class ScriptParser
 			else
 				@actions << object
 			end
+		end
+	end
+
+	def parse_individual_lines(array)
+		array.map do |block|
+			parse_line(block)
 		end
 	end
 
