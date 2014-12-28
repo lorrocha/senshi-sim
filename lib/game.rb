@@ -8,3 +8,4 @@ class GameRunner
 	end
 end
 
+GameRunner.start
