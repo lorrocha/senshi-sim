@@ -1,12 +1,12 @@
 require 'pry'
-Dir['./*.rb'].each { |f| require f }
+Dir['./*.rb'].each { |f| require f unless f.include?('game.rb') }
 Dir['../levels/*.rb'].each { |f| require f }
+Dir['../scripts/*rb'].each { |f| require f }
 
 class GameRunner
-	def self.start
-		usa = Level1.new(Usagi.new, []).run
-		binding.pry
+	def start
+	 	usa = Level1.new(Usagi.new, []).run
 	end
 end
 
-GameRunner.start
+GameRunner.new.start
