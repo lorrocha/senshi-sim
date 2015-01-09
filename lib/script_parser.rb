@@ -29,7 +29,7 @@ class ScriptParser
 				temp_array = []
 				start_array = false
 			elsif line.start_with?('**')
-				total_script << line
+				total_script << strip_action(line)
 			end
 		end
 		total_script << temp_array unless temp_array.empty?
@@ -46,9 +46,7 @@ class ScriptParser
 	end
 
 	def parse_individual_lines(array)
-		array.map do |block|
-			parse_line(block)
-		end
+		array.map { |block| parse_line(block) }
 	end
 
 	def parse_line(array)
@@ -56,6 +54,10 @@ class ScriptParser
 			split_line = line.split(': ')
 			{split_line[0] => split_line[1]}
 		end
+	end
+
+	def strip_action(line)
+		line.gsub('**', '').strip
 	end
 
 end

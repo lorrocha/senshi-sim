@@ -1,11 +1,12 @@
 class Level1 < Level
 	def initialize(usagi, senshi_hash)
 		super
-		@script = ScriptParser.new('test.txt')
+		@script = ScriptParser.new('../scripts/level_1.txt')
 	end
 
 	def opening_exposition
 		puts_lines(@script.lines.first)
+		binding.pry
 	end
 
 	def first_action
@@ -45,13 +46,9 @@ class Level1 < Level
 		puts "Your brows furrow as you sit, willing your ears to pick up on every sound possible. You notice the scuffling pick up again, and soon afterwards make out the form of a cat."
 	end
 
-	def second_exposition
-		puts "Luna: Usagi. Blah blah blah"
-	end
-
-
 	def run
 		opening_exposition
+		execute_action
 		first_action
 		return finish_level
 	end
