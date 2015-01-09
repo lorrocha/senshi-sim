@@ -2,7 +2,7 @@ Scene 1
 Narrator: Something something something what.
 Luna: STOP! Look at this!
 
-** check_stats('composure', 20)
+** stat_check('composure', 20)
 
 Scene 2
 Luna: Blah blah blah
